@@ -180,6 +180,7 @@
             this.button12.TabIndex = 13;
             this.button12.Text = "Done";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // Barbezahlung
             // 

@@ -12,9 +12,23 @@ namespace WindowsFormsApplication1
 {
     public partial class Bezahlung : Form
     {
+        private Barbezahlung barbezahlForm;
         public Bezahlung()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            barbezahlForm = new Barbezahlung();
+            barbezahlForm.ShowDialog();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1
     public partial class Bestellung : Form
     {
         private Schnellauswahl additemfenster;
+        private Bezahlung bezahlfenster;
         public Bestellung()
         {
             InitializeComponent();
@@ -42,6 +43,12 @@ namespace WindowsFormsApplication1
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_click(object sender, EventArgs e)
+        {
+            bezahlfenster = new Bezahlung();
+            bezahlfenster.ShowDialog();
         }
     }
 }

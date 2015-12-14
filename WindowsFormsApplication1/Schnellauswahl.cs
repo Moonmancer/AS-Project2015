@@ -20,6 +20,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             additemfenster = new Auswahl( "Burger");
             additemfenster.ShowDialog();
             this.Close();
@@ -27,24 +28,28 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             additemfenster = new Auswahl( "Menu");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             additemfenster = new Auswahl("Dessert");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
             additemfenster = new Auswahl("Siders");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             additemfenster = new Auswahl("Drinks");
             additemfenster.ShowDialog();
             this.Close();

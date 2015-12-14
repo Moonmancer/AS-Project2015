@@ -24,5 +24,10 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void button1_click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
