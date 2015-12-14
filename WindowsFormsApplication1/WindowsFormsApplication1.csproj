@@ -51,6 +51,7 @@
     <Compile Include="Bestellung.Designer.cs">
       <DependentUpon>Bestellung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hamburger.cs" />
     <Compile Include="Schnellauswahl.cs">
       <SubType>Form</SubType>
     </Compile>

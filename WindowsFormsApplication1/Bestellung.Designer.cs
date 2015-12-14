@@ -69,6 +69,7 @@
             this.Order.Name = "Order";
             this.Order.Size = new System.Drawing.Size(750, 400);
             this.Order.TabIndex = 4;
+            this.Order.Tag = "puste";
             // 
             // textBox1
             // 

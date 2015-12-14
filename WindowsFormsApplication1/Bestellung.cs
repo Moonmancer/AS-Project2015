@@ -47,7 +47,12 @@ namespace WindowsFormsApplication1
         }
         public void add(string c)
         {
-            Order.Items.Add(c);
+            Order.Items.Add(c,true);
+        }
+
+        internal void clear()
+        {
+            Order.Items.Clear();
         }
     }
 }
