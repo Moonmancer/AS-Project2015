@@ -69,7 +69,6 @@
             this.Order.Name = "Order";
             this.Order.Size = new System.Drawing.Size(750, 400);
             this.Order.TabIndex = 4;
-            this.Order.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -97,8 +96,8 @@
 
         private global::System.Windows.Forms.Button button1;
         private global::System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckedListBox Order;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckedListBox Order;
     }
 }
 

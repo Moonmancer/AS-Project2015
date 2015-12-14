@@ -12,7 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Barbezahlung : Form
     {
-        public Barbezahlung()
+        public Barbezahlung(Bestellung BestellForm)
         {
             InitializeComponent();
         }

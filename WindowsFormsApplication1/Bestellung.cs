@@ -36,19 +36,18 @@ namespace WindowsFormsApplication1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            additemfenster = new Schnellauswahl();
+            additemfenster = new Schnellauswahl( this );
             additemfenster.ShowDialog();
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_click(object sender, EventArgs e)
         {
-            bezahlfenster = new Bezahlung();
+            bezahlfenster = new Bezahlung( this );
             bezahlfenster.ShowDialog();
+        }
+        public void add(string c)
+        {
+            Order.Items.Add(c);
         }
     }
 }

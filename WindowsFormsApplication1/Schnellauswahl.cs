@@ -13,15 +13,17 @@ namespace WindowsFormsApplication1
     public partial class Schnellauswahl : Form
     {
         private Auswahl additemfenster;
-        public Schnellauswahl()
+        private Bestellung bestellForm;
+        public Schnellauswahl( Bestellung BestellForm)
         {
+            bestellForm = BestellForm;
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl( "Burger");
+            additemfenster = new Auswahl(bestellForm, "Burger");
             additemfenster.ShowDialog();
             this.Close();
         }
@@ -29,28 +31,28 @@ namespace WindowsFormsApplication1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl( "Menu");
+            additemfenster = new Auswahl(bestellForm, "Menu");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl("Dessert");
+            additemfenster = new Auswahl(bestellForm, "Dessert");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl("Siders");
+            additemfenster = new Auswahl(bestellForm, "Siders");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl("Drinks");
+            additemfenster = new Auswahl(bestellForm, "Drinks");
             additemfenster.ShowDialog();
             this.Close();
         }

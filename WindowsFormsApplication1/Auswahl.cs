@@ -14,9 +14,11 @@ namespace WindowsFormsApplication1
     {
 
         private string Type;
-        public Auswahl(string Typ)
+        private Bestellung bestellForm;
+        public Auswahl(Bestellung BestellForm, string Typ)
         {
             Type = Typ;
+            bestellForm = BestellForm;
             InitializeComponent();
         }
 
@@ -27,6 +29,7 @@ namespace WindowsFormsApplication1
 
         private void button1_click(object sender, EventArgs e)
         {
+            bestellForm.add("");
             this.Close();
         }
     }
