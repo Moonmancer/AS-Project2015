@@ -8,3 +8,16 @@ D:\Berufsschule\AS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\W
 D:\Berufsschule\AS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 D:\Berufsschule\AS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Bestellung.resources
 D:\Berufsschule\AS\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form2.resources
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Bestellung.resources
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Schnellauswahl.resources
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Auswahl.resources
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Bezahlung.resources
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Barbezahlung.resources
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Studium\Berufsschule\AS\AS-Project\AS-Project2015\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

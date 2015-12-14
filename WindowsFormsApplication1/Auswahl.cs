@@ -12,8 +12,11 @@ namespace WindowsFormsApplication1
 {
     public partial class Auswahl : Form
     {
-        public Auswahl()
+
+        private string Type;
+        public Auswahl(string Typ)
         {
+            Type = Typ;
             InitializeComponent();
         }
 
