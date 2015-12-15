@@ -7,28 +7,20 @@ namespace WindowsFormsApplication1
 {
     public class Ingredients
     {
-        /// <summary>
-        /// </summary>
+        public Ingredients(int id, string name)
+        {
+            this.id = id;
+            this.name = name;
+        }
+
         public int id
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get; set;
         }
 
         public string name
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get; set;
         }
     }
 }

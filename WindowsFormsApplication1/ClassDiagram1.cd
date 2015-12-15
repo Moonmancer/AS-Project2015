@@ -3,7 +3,7 @@
   <Class Name="WindowsFormsApplication1.Bestellung" Collapsed="true">
     <Position X="0.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAACAAAAAAAACAAAgCAAAYAAgQEEAECAAAAAA=</HashCode>
+      <HashCode>AEEAAAAAACAAAABAAACAAAgCAAAYAAgAEGAECAACAAA=</HashCode>
       <FileName>Bestellung.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -33,13 +33,6 @@
       <FileName>Desk.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WindowsFormsApplication1.CashSystem">
-    <Position X="4.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IAAAQAAAAAAAAAAAAACAAAAAAAAAAAIEAAAAAAAAAAQ=</HashCode>
-      <FileName>System.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="WindowsFormsApplication1.Lager">
     <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -64,16 +57,18 @@
   <Class Name="WindowsFormsApplication1.Drinks">
     <Position X="10" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Drinks.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="WindowsFormsApplication1.Siders">
     <Position X="12.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Siders.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="WindowsFormsApplication1.Kassen">
     <Position X="8.25" Y="0.5" Width="1.5" />
@@ -82,10 +77,17 @@
       <FileName>Kassen.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="WindowsFormsApplication1.CashSystem">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAEAAAAAAgAAAACAAAAAAAAAAAIEAAAAAAAAAAI=</HashCode>
+      <FileName>System.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="WindowsFormsApplication1.iProducts">
     <Position X="12.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAADAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAgAgA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAgA=</HashCode>
       <FileName>iProducts.cs</FileName>
     </TypeIdentifier>
   </Interface>

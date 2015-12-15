@@ -10,7 +10,6 @@ namespace WindowsFormsApplication1
         int id
         {
             get;
-            set;
         }
 
         string name
@@ -25,18 +24,10 @@ namespace WindowsFormsApplication1
             set;
         }
 
-        List<int> content
-        {
-            get;
-            set;
-        }
-
         string type
         {
             get;
             set;
         }
-    
-        void getContent();
     }
 }

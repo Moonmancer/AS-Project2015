@@ -5,39 +5,33 @@ using System.Text;
 
 namespace WindowsFormsApplication1
 {
-    public class Siders
+    public class Siders : iProducts
     {
+        public Siders(int id, string name, decimal price) {
+            this.id = id;
+            this.name = name;
+            this.price = price;
+            this.type = "sider";
+        }
+
         public int id
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
         }
 
         public string name
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get; set;
         }
 
         public decimal price
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get; set;
+        }
+
+        public string type
+        {
+            get; set;
         }
     }
 }

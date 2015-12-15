@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="Drinks.cs" />
     <Compile Include="Bestellung.cs">
       <SubType>Form</SubType>
@@ -52,6 +53,7 @@
       <DependentUpon>Bestellung.cs</DependentUpon>
     </Compile>
     <Compile Include="Hamburger.cs" />
+    <Compile Include="Menue.cs" />
     <Compile Include="Schnellauswahl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +125,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="inis\menues.txt" />
+    <Content Include="inis\burgers.txt" />
+    <Content Include="inis\ingridients.txt" />
+    <Content Include="inis\siders.txt" />
+    <Content Include="inis\drinks.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
