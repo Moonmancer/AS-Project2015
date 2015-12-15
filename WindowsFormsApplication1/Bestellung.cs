@@ -14,9 +14,14 @@ namespace WindowsFormsApplication1
     {
         private Schnellauswahl additemfenster;
         private Bezahlung bezahlfenster;
-        public Bestellung()
+        public Bestellung(CashSystem system)
         {
             InitializeComponent();
+            this.system = system;
+        }
+
+        private CashSystem system {
+            get; set;
         }
 
         private void Bestellung_Load(object sender, EventArgs e)
@@ -36,7 +41,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            additemfenster = new Schnellauswahl( this );
+            additemfenster = new Schnellauswahl( this, system );
             additemfenster.ShowDialog();
         }
 

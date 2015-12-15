@@ -5,49 +5,29 @@ using System.Text;
 
 namespace WindowsFormsApplication1
 {
-    public class Kassen
+    public class Kasse
     {
-        public List<int> desks
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public bool isOpen;
+        public int number;
 
-        public List<int> opendesks
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public Order currentOrder;
 
-        public int currentOrder
+        public Kasse(int number)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+            this.number = number;
+            this.isOpen = true;
+
+            this.currentOrder = new Order(DateTime.Now.Ticks);
+        }        
     
         public void openDesk()
         {
-            throw new System.NotImplementedException();
+            this.isOpen = true;
         }
 
-        public void closeDesk(int id)
+        public void closeDesk()
         {
-            throw new System.NotImplementedException();
+            this.isOpen = false;
         }
     }
 }

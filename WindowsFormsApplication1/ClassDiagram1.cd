@@ -3,7 +3,7 @@
   <Class Name="WindowsFormsApplication1.Bestellung" Collapsed="true">
     <Position X="0.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEEAAAAAACAAAABAAACAAAgCAAAYAAgAEGAECAACAAA=</HashCode>
+      <HashCode>AEEAAAAAACAAAADAAACAAAgCAAAYAAgAEGAECAACAAA=</HashCode>
       <FileName>Bestellung.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -80,8 +80,8 @@
   <Class Name="WindowsFormsApplication1.CashSystem">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAQAEAAAAAAgAAAACAAAAAAAAAAAIEAAAAAAAAAAI=</HashCode>
-      <FileName>System.cs</FileName>
+      <HashCode>IABAQAEAAAgAAgAAAACAAAAACAAAAEIEAAAQAIAIAAI=</HashCode>
+      <FileName>CashSystem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="WindowsFormsApplication1.iProducts">

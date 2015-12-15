@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
             this.drink = drink;
             this.sider = sider;
             this.burger = burger;
-            this.type = "menue"; 
+            this.type = "menu"; 
         }
 
         public int id
@@ -46,28 +46,12 @@ namespace WindowsFormsApplication1
 
         public decimal price
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
+            get; set;
         }
 
         public string type
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
+            get; set;
         }
     }
 }

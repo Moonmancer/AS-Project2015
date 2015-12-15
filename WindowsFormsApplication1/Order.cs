@@ -7,10 +7,19 @@ namespace WindowsFormsApplication1
 {
     public class Order
     {
+        private long number {
+            get; set;
+        }
 
-        private List<iProducts> products;
+        private List<iProducts> products
+        {
+            get; set;
+        }
 
-        private List<Ingredients> extras;
+        private List<Ingredients> extras
+        {
+            get; set;
+        }
 
         public void addProduct(iProducts product , Ingredients extra)
         {
@@ -25,9 +34,11 @@ namespace WindowsFormsApplication1
             //foreach products int summe = summe + prodcuts.price;
         }
 
-        public Order()
+        public Order(long number)
         {
-
+            this.number = number;
+            this.products = new List<iProducts>();
+            this.extras = new List<Ingredients>();
         }
     }
 }

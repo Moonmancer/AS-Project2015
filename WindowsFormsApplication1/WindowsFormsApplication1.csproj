@@ -87,7 +87,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Siders.cs" />
-    <Compile Include="System.cs" />
+    <Compile Include="CashSystem.cs" />
     <EmbeddedResource Include="Bestellung.resx">
       <DependentUpon>Bestellung.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,11 +127,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="inis\menues.txt" />
-    <Content Include="inis\burgers.txt" />
-    <Content Include="inis\ingridients.txt" />
-    <Content Include="inis\siders.txt" />
-    <Content Include="inis\drinks.txt" />
+    <EmbeddedResource Include="inis\menues.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inis\burgers.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inis\ingridients.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inis\siders.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inis\drinks.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

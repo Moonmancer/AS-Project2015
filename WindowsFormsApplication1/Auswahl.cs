@@ -15,11 +15,18 @@ namespace WindowsFormsApplication1
 
         private string Type;
         private Bestellung bestellForm;
-        public Auswahl(Bestellung BestellForm, string Typ)
+        private CashSystem system
         {
-            Type = Typ;
-            bestellForm = BestellForm;
-            InitializeComponent();
+            get; set;
+        }
+
+        public Auswahl(Bestellung BestellForm, CashSystem system, string Typ)
+        {
+            this.Type = Typ;
+            this.system = system;
+            this.bestellForm = BestellForm;
+
+            InitializeComponent(system, Typ);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

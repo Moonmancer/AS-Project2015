@@ -14,16 +14,24 @@ namespace WindowsFormsApplication1
     {
         private Auswahl additemfenster;
         private Bestellung bestellForm;
-        public Schnellauswahl( Bestellung BestellForm)
+
+        private CashSystem system
         {
-            bestellForm = BestellForm;
+            get; set;
+        }
+
+        public Schnellauswahl( Bestellung BestellForm, CashSystem system)
+        {
+            this.system = system;
+            this.bestellForm = BestellForm;
+
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl(bestellForm, "Burger");
+            additemfenster = new Auswahl(bestellForm, system, "burger");
             additemfenster.ShowDialog();
             this.Close();
         }
@@ -31,28 +39,28 @@ namespace WindowsFormsApplication1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl(bestellForm, "Menu");
+            additemfenster = new Auswahl(bestellForm, system, "Menu");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl(bestellForm, "Dessert");
+            additemfenster = new Auswahl(bestellForm, system, "dessert");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl(bestellForm, "Siders");
+            additemfenster = new Auswahl(bestellForm, system, "sider");
             additemfenster.ShowDialog();
             this.Close();
         }
         private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            additemfenster = new Auswahl(bestellForm, "Drinks");
+            additemfenster = new Auswahl(bestellForm, system, "drink");
             additemfenster.ShowDialog();
             this.Close();
         }

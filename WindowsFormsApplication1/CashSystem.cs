@@ -9,9 +9,16 @@ namespace WindowsFormsApplication1
     {
         private System.ComponentModel.IContainer components;
 
+        string projectPath = System.IO.Directory.GetCurrentDirectory();
+
         private void initSiders() {
+            if (this.Siders == null)
+            {
+                this.Siders = new List<Siders>();
+            }
+
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(Config.PATH2SIDERS);
+            System.IO.StreamReader file = new System.IO.StreamReader(projectPath + Config.PATH2SIDERS);
 
             while ((line = file.ReadLine()) != null)
             {
@@ -28,8 +35,13 @@ namespace WindowsFormsApplication1
         }
 
         private void initDrinks() {
+            if (this.Drinks == null)
+            {
+                this.Drinks = new List<Drinks>();
+            }
+
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(Config.PATH2SIDERS);
+            System.IO.StreamReader file = new System.IO.StreamReader(projectPath + Config.PATH2DRINKS);
 
             while ((line = file.ReadLine()) != null)
             {
@@ -47,8 +59,15 @@ namespace WindowsFormsApplication1
 
         private void initIngridients()
         {
+            if (this.Ingridients == null)
+            {
+                this.Ingridients = new List<Ingredients>();
+            }
+
+            string path = projectPath + Config.PATH2INGRIENTS;
+
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(Config.PATH2INGRIENTS);
+            System.IO.StreamReader file = new System.IO.StreamReader(projectPath + Config.PATH2INGRIENTS);
 
             while ((line = file.ReadLine()) != null)
             {
@@ -65,8 +84,13 @@ namespace WindowsFormsApplication1
 
         private void initHamburger()
         {
+            if (this.Hamburger == null)
+            {
+                this.Hamburger = new List<Hamburger>();
+            }
+
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(Config.PATH2BURGERS);
+            System.IO.StreamReader file = new System.IO.StreamReader(projectPath + Config.PATH2BURGERS);
 
             while ((line = file.ReadLine()) != null)
             {
@@ -92,8 +116,13 @@ namespace WindowsFormsApplication1
 
         private void initMenue()
         {
+            if (this.Menues == null)
+            {
+                this.Menues = new List<Menue>();
+            }
+
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(Config.PATH2MENUES);
+            System.IO.StreamReader file = new System.IO.StreamReader(projectPath + Config.PATH2MENUES);
 
             while ((line = file.ReadLine()) != null)
             {
@@ -103,13 +132,26 @@ namespace WindowsFormsApplication1
                 string name = product[1];
                 decimal price = Decimal.Parse(product[2]);
 
-                Drinks drink = this.Drinks.Find(d => d.id == Int32.Parse(product[3]));
-                Siders sider = this.Siders.Find(s => s.id == Int32.Parse(product[4]));
-                Hamburger burger = this.Hamburger.Find(b => b.id == Int32.Parse(product[5]));
+                string[] menueEntry = product[3].Split(';');
+
+                Drinks drink = this.Drinks.Find(d => d.id == Int32.Parse(menueEntry[0]));
+                Siders sider = this.Siders.Find(s => s.id == Int32.Parse(menueEntry[1]));
+                Hamburger burger = this.Hamburger.Find(b => b.id == Int32.Parse(menueEntry[2]));
 
                 Menue menue = new Menue(id, name, price, drink, sider, burger);
 
                 this.Menues.Add(menue);
+            }
+        }
+
+        private void initCashDesks()
+        {
+            if (this.Kassen == null)
+            {
+                Kasse kasse = new Kasse(1);
+
+                this.Kassen = new List<Kasse>();
+                this.Kassen.Add(kasse);
             }
         }
 
@@ -118,7 +160,7 @@ namespace WindowsFormsApplication1
             get; set;
         }
 
-        public Kassen Kasse
+        public List<Kasse> Kassen
         {
             get; set;
         }
@@ -153,7 +195,10 @@ namespace WindowsFormsApplication1
             this.initIngridients();
             this.initDrinks();
             this.initSiders();
+            this.initHamburger();
             this.initMenue();
+
+            this.initCashDesks();
         }
 
         public List<int> getAllProducts()

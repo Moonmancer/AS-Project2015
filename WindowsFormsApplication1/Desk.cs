@@ -50,7 +50,7 @@ namespace WindowsFormsApplication1
         {
             //delete(lastOrder);
             lastOrder = currentOrder;
-            currentOrder = new Order();
+            currentOrder = new Order(DateTime.Now.Ticks);
         }
 
         public void addProduct()

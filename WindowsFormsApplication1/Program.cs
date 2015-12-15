@@ -14,9 +14,12 @@ namespace WindowsFormsApplication1
         [STAThread]
         static void Main()
         {
+            CashSystem system = new CashSystem();
+            system.init();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bestellung());
+            Application.Run(new Bestellung(system));
         }
     }
 }
